@@ -73,13 +73,23 @@
     <Compile Include="FrmOktatok.Designer.cs">
       <DependentUpon>FrmOktatok.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProgramok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProgramok.Designer.cs">
+      <DependentUpon>FrmProgramok.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPEC\orangeSelectionColor.cs" />
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOktatok.resx">
       <DependentUpon>FrmOktatok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgramok.resx">
+      <DependentUpon>FrmProgramok.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +110,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SPEC\joga.docx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -115,6 +126,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>jogastudio.mdf</DependentUpon>
     </Content>
+    <Content Include="SPEC\jogaDataRows.txt" />
+    <Content Include="SPEC\jogaDBM_dark.png" />
+    <Content Include="SPEC\jogaDBM_light.png" />
+    <Content Include="SPEC\joga_BG.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

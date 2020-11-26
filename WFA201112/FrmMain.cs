@@ -34,23 +34,23 @@ namespace WFA201112
 
         private void BtnKilepes_Click(object sender, EventArgs e)
         {
-            /*
             var res = MessageBox.Show(
                 "Biztos vagy benne, hogy ki akarsz lépni?",
                 "megerősítés",
                 MessageBoxButtons.YesNo);
 
-            if (res == DialogResult.Yes) Application.Exit(); 
-            */
-
-            if (MessageBox.Show( "Biztos vagy benne, hogy ki akarsz lépni?", "megerősítés",
-            MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) Application.Exit();
-
+            if (res == DialogResult.Yes) Application.Exit();
         }
 
         private void BtnOktatok_Click(object sender, EventArgs e)
         {
             var frm = new FrmOktatok(connectionString);
+            frm.ShowDialog();
+        }
+
+        private void BtnProgramok_Click(object sender, EventArgs e)
+        {
+            var frm = new FrmProgramok(connectionString);
             frm.ShowDialog();
         }
     }
