@@ -70,7 +70,7 @@ namespace WFA201112
             {
                 rtbIdopontok.Text += 
                     $"{r.GetDateTime(0).ToString("yyyy-MM-dd")}   " +
-                    $"{r.GetDateTime(0).ToString("hh:mm")}\n";
+                    $"{r.GetDateTime(0).ToString("HH:mm")}\n";
             }
             conn.Close();
         }
